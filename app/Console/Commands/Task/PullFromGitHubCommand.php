@@ -58,7 +58,7 @@ class PullFromGitHubCommand extends Command
             return self::SUCCESS;
         }
 
-        $this->info("Found {$issues->count()} issues");
+        $this->info("Found " . count($issues) . " issues");
         $this->newLine();
 
         $created = 0;
